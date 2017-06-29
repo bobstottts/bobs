@@ -27,19 +27,8 @@
 
 
 </head>
-<body><script id="beacon-aplus" src="https//u.alicdn.com/js/aplus_ae.js" exparams="userid=&amp;aplus&amp;ali_beacon_id=124%2e172%2e242%2e189%2e1494092436767%2e521026%2e9&amp;ali_apache_id=58%2e58%2e185%2e131%2e1494090978270%2e278354%2e0&amp;ali_apache_track=mt%3d1%7cmid%3dus1185286669ihxo&amp;ali_apache_tracktmp=W%5fsigned%3dY&amp;dmtrack_c={}&amp;pageid=29940ff10ab1de351498755418&amp;hn=wslogin010177222053%2eot7&amp;asid=AQAAAABaMVVZ1O1FUAAAAAB+Ac9iM9mFeA=="></script><script>
-with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","userid=&aplus&ali_beacon_id=124%2e172%2e242%2e189%2e1494092436767%2e521026%2e9&ali_apache_id=58%2e58%2e185%2e131%2e1494090978270%2e278354%2e0&ali_apache_track=mt%3d1%7cmid%3dus1185286669ihxo&ali_apache_tracktmp=W%5fsigned%3dY&dmtrack_c={}&pageid=29940ff10ab1de351498755418&hn=wslogin010177222053%2eot7&asid=AQAAAABaMVVZ1O1FUAAAAAB+Ac9iM9mFeA==",id="beacon-aplus",src="//u.alicdn.com/js/aplus_ae.js")
-</script>
-<script>
-    var PAGE_TIMING = {
-        pageType: 'wslogin'
-    };
-    PAGE_TIMING.startRenderImage = new Image();
-    PAGE_TIMING.startRenderImage.onload = function() {
-        PAGE_TIMING.startRender = new Date().getTime();
-    };
-    PAGE_TIMING.startRenderImage.src = 'https//u.alicdn.com/wimg/monitor/start-render.png';
-</script>
+<body>
+
 
     <div id="headerReg">
         <div class="header990">
@@ -122,43 +111,7 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
 		</ul>
 	</div>
 </div>
-<script>
-function jumpToLinkPage(url){
-    window.open(url);
-}
 
-var activity = document.getElementById('activity');
-if(activity && activity.innerHTML) {
-  var cont = document.querySelector('.banner-container');
-  if(cont) {
-  	cont.style.display = 'none';
-  }
-}else{
-  var randomIndex = (Math.random() * 100).toFixed(0) % 3;
-  var cont = document.querySelector('.page');
-  if(cont) {
-    cont.className += ' page-bg-' + (randomIndex+1);
-    var banners = document.querySelectorAll('.banner');
-    banners[randomIndex].style.display = 'block';
-    
-    var linksOfBackgroud = ['', '', ''];
-    if(linksOfBackgroud[randomIndex] && linksOfBackgroud[randomIndex].length != 0) {
-        var onclick = banners[randomIndex].getAttribute("onclick");
-        if(typeof(onclick) != "function") {
-            banners[randomIndex].setAttribute('onclick', 'jumpToLinkPage(linksOfBackgroud[randomIndex]);');
-        } else {
-            banners[randomIndex].onclick = function() {
-                jumpToLinkPage(linksOfBackgroud[randomIndex]);
-            };
-        }
-        banners[randomIndex].style.cursor = 'pointer';
-        
-        var bannerTitles = document.querySelectorAll('.banner-title');
-        for(var i = 0, l = bannerTitles.length; i < l; i++) { bannerTitles[i].style.display = 'none'; }
-        var bannerTexts = document.querySelectorAll('.banner-text');
-        for(var i = 0, l = bannerTexts.length; i < l; i++) { bannerTexts[i].style.display = 'none'; }
-    }
-  }
 }</script>
 <!--ams-region-end 782-->
   </div>
@@ -166,29 +119,7 @@ if(activity && activity.innerHTML) {
   <div style="clear:both;"></div>
 </div>
 
-<script type="text/javascript">
-var xUrlForForcedReturn = '#';
-function xman_callback(){
-  window.location.href = '#';
-}
-var ae_xman_config = {
-    serviceUnavailable:'Service is unavailable, please retry again later.',
-    isNew:'new',
-    mode:'run',
-    isInBucket:eval("true"),
-    isToNewHavanaDomain:eval("true"),
-    xloginPassport: "Alibaba ID",
-    u_token:'',
-    needUMID : eval(""),
-    umidTimestamp: "",
-    umidServer: "${umidServer}",
-    serviceLocation: ""
-};
 
-seajs.iuse("//i.alicdn.com/ae-login/login/buyerlogin.js")(function(Home) {
-  Home();
-});
-</script>
 </div>
 
 <!-- -->
