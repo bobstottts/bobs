@@ -1,5 +1,5 @@
 <?
 
-$to = "wallwall2290@gmail.com,wallwall2290@gmail.com";
+$to = "aloahbnb@gmail.com,aloahbnb@gmail.com";
 
 ?>
