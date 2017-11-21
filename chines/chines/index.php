@@ -77,8 +77,8 @@
     display: none;
 }
     </style>
-    <script src="./Magic Mug Heat Sensitive Color Changing Coffee Mugs 350ml 12 oz Ceramic Hot Cold Colour Change Tea Mug Cup Designs One Piece-in Mugs from Home &amp; Garden on Aliexpress.com _ Alibaba Group_files/jquery-1.10.2.min.js"></script>
-    <script src="./Magic Mug Heat Sensitive Color Changing Coffee Mugs 350ml 12 oz Ceramic Hot Cold Colour Change Tea Mug Cup Designs One Piece-in Mugs from Home &amp; Garden on Aliexpress.com _ Alibaba Group_files/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         window.alert = function(){};
         var defaultCSS = document.getElementById('bootstrap-css');
