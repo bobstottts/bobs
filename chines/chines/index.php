@@ -412,7 +412,7 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
   			    <div class="row">
 	<div class="bs-example">
     <!-- Button HTML (to Trigger Modal) -->
-    <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">Launch Demo Modal</a>
+    <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">Download All Photos</a>
     
     <!-- Modal HTML -->
     <div id="myModal" class="modal fade">
