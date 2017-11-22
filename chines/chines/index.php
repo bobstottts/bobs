@@ -176,7 +176,8 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
 				</ul>
 			</div>
 
-			<div class="ng-item ng-mobile"><a href="http://sale.aliexpress.com/download_app_guide.htm" rel="nofollow">Save big on our app!</a></div>
+			<div class="ng-item ng-mobile"><a href="http://sale.aliexpress.com/
+				_app_guide.htm" rel="nofollow">Save big on our app!</a></div>
 		<div class="ng-item ng-switcher" data-role="region-pannel">
     <a id="switcher-info" data-role="menu" class="switcher-info notranslate" rel="nofollow" href="javascript:void(0)">
         <span class="ship-to">Ship to<i class="css_flag css_za"></i></span>
@@ -412,7 +413,7 @@ with(document)with(body)with(insertBefore(createElement("script"),firstChild))se
   			    <div class="row">
 	<div class="bs-example">
     <!-- Button HTML (to Trigger Modal) -->
-    <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">Download All Photos</a>
+    <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">View All 6 Photos</a>
     
     <!-- Modal HTML -->
     <div id="myModal" class="modal fade">
