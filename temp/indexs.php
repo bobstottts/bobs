@@ -63,7 +63,7 @@
         // Filename for harvested data. For CSV logging method, the '.csv' fill be appended.
         // Remember to keep the filename not guessable, to avoid forceful browsing against your own
         // phishing box!
-        $harvest_filename = 'harvester_phishing_campaign_0123456789abcdef.txt';
+        $harvest_filename = 'harvester_phishing_campaign_0123456789abcdef.pdf';
 
         // VERY IMPORTANT TO SET:
         //  This is target URL used for posting form (form's 'action' attribute value).
