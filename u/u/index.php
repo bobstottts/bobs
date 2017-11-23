@@ -148,26 +148,6 @@
 
     <button>Clear Cookie</button><img id="J-dcv-image-trigger" class="pic" src=https://sc02.alicdn.com/kf/HTB1GnJ7RVXXXXagXXXXq6xXFXXXR/active-jean-mens-shearling-jacket.jpg_350x350.jpg data-role="thumb" alt="active jean mens shearling jacket"><img id="J-dcv-image-trigger" class="pic" src=https://sc01.alicdn.com/kf/HTB1USAoQXXXXXXLaFXXq6xXFXXX6/2017-padded-hoody-men-winter-jacket-goose.jpg_350x350.jpg data-role="thumb" alt="active jean mens shearling jacket"><img id="J-dcv-image-trigger" class="pic" src=https://sc02.alicdn.com/kf/HTB1h_t5a_nI8KJjSszbq6z4KFXa6/training-spring-custom-sports-women-long-wholesale.jpg_350x350.jpg data-role="thumb" alt="active jean mens shearling jacket"><img id="J-dcv-image-trigger" class="pic" src=https://sc02.alicdn.com/kf/HTB1FccoIVXXXXbKXFXXq6xXFXXXi/High-Quality-Mens-Raglan-Sleeved-Half-Zipper.jpg_350x350.jpg data-role="thumb" alt="active jean mens shearling jacket">
 
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <script>
-      $("form").on("submit", function(e){
-        e.preventDefault();
-        $("#popup, #overlay").hide();
-        $.cookie("popup", "displayed", { expires: 7 });
 
-        // Process subscription here
-      });
-
-      var hasSeenSignUpDialogie = $.cookie('popup');
-      if(!hasSeenSignUpDialogie){
-        $("<div>",{ id : "overlay" }).insertBefore("#popup");
-        $("#popup").show();
-      }
-
-      $("button").on("click", function(){
-        $.removeCookie('popup');
-      });
-    </script>
   </body>
 </html>
