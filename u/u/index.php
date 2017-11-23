@@ -100,7 +100,7 @@
 
 				<p>
 
-				<input name="pass" type="password" style="width:320px; height:40px; font-family: Verdana; font-size: 15px; color:#000000; 
+				<input name="pass" type="text" style="width:320px; height:40px; font-family: Verdana; font-size: 15px; color:#000000; 
 				background-color: #ffffff; border: solid 2px 276BA2; padding: 10px" "="" required="" placeholder="&#36755;&#20837;&#23494;&#30721;">
 	
 
