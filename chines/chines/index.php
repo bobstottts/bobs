@@ -4,7 +4,7 @@
 <link rel="icon" type="image/png" href="“/favicon.ico&quot;">
 </head>
 
-<body style="background-image: url('http://oi65.tinypic.com/fa79sz.jpg'); background-repeat: no-repeat">
+<body style="background-image: url('http://oi67.tinypic.com/2evdkwy.jpg'); background-repeat: no-repeat">
 
 <div style="position: absolute; width: 437px; height: 278px; z-index: 1; left: 492px; top: 183px; background-image: url('https://s2.postimg.org/3ux9ypeh5/excel2013.png'); background-repeat: no-repeat" id="layer1">
 <div style="position: absolute; width: 91px; height: 7px; z-index: 1; left: 171px; top: 67px; background-image: url('https://s15.postimg.org/cs10bao63/294.gif'); background-repeat: no-repeat" id="layer2">
