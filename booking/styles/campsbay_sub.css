@@ -1,0 +1,395 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+#lang {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 79.1666%;
+	display: block;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+@media only screen and (max-width: 480px) {
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #C5B358;
+}
+#LayoutDiv3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	padding-top: 20px;
+	font-size: 14px;
+}
+#logos {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	padding-bottom: 10px;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+/* SLIDESHOW */
+#slideshow {
+	/*margin: 50px auto; */
+	position: relative;
+	width: 302px;
+	height: 90px;
+	margin-right: auto;
+	margin-left: auto;
+	background-repeat: no-repeat;
+    /*padding: 10px; */
+    /*box-shadow: 0 0 20px rgba(0,0,0,0.4); */
+}
+#slideshow img {
+	width: 289px;
+	height: 100px;
+}
+
+#slideshow > div {
+	position: absolute;
+	
+}
+
+#lang {
+	clear: none;
+	float: left;
+	width: 100%;
+	display: block;
+	padding-bottom: 10px;
+	
+}
+#MenuBar1 li {
+	width: 100%;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #BBA92B;	
+}
+#MenuBar1 a {
+	color: #FFFFFF;
+	font-weight:bold;
+	font-size: 13px;
+}
+div.col3b { 
+	width: 180px;
+	float: left; 
+	margin-left: 10px; 
+	margin-right:10px;
+}
+
+div.gallery{
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+div.gallery img {
+	background-color: #FFF;padding: 4px;
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	margin-bottom: 10px;
+	/*filter:alpha(opacity=60);-moz-opacity:.6;opacity: .6;*/
+	-webkit-transition: opacity .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out;
+	-ms-transition: opacity .2s ease-in-out;	
+	transition: opacity .2s ease-in-out;
+}
+
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #BDA842;
+}
+
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.7179%;
+	display: block;
+}
+#LayoutDiv2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #C5B358;
+}
+#LayoutDiv3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-size: 14px;
+	padding-top: 20px;
+}
+#logos {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 48.7179%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+#MenuBar1 a {
+	color: #FFFFFF;
+}
+
+/* SLIDESHOW */
+#slideshow {
+	/*margin: 50px auto; */
+	position: relative;
+	width: 620px;
+	height: 172px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../images/slideshow-bg-sub.png);
+	background-repeat: no-repeat;
+    /*padding: 10px; */
+    /*box-shadow: 0 0 20px rgba(0,0,0,0.4); */
+}
+
+#slideshow > div {
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	
+}
+
+#lang {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.7179%;
+	display: block;
+	margin-top: 20px;
+	
+}
+
+div.col3b { 
+	width: 180px;
+	float: left; 
+	margin-left: 10px; 
+	margin-right:10px;
+}
+
+div.gallery{
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+div.gallery img {
+	background-color: #FFF;padding: 4px;
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	margin-bottom: 10px;
+	/*filter:alpha(opacity=60);-moz-opacity:.6;opacity: .6;*/
+	-webkit-transition: opacity .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out;
+	-ms-transition: opacity .2s ease-in-out;	
+	transition: opacity .2s ease-in-out;
+}
+
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #BDA842;
+}
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 900px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.9795%;
+	display: block;
+	background-color: #FFFFFF;
+}
+#LayoutDiv2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #C5B358;
+}
+#LayoutDiv3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 98%;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#logos {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 48.7179%;
+	display: block;
+}
+#MenuBar1 {
+	margin-left:auto;
+	margin-right:auto;
+	width: 100%;
+}
+#MenuBar1 a {
+	color: #FFFFFF;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+/* SLIDESHOW */
+#slideshow {
+	/*margin: 50px auto; */
+	position: relative;
+	width: 620px;
+	height: 172px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../images/slideshow-bg-sub.png);
+	background-repeat: no-repeat;
+    /*padding: 10px; */
+    /*box-shadow: 0 0 20px rgba(0,0,0,0.4); */
+}
+
+#slideshow > div {
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	
+}
+div.col3b { 
+	width: 180px;
+	float: left; 
+	margin-left: 10px; 
+	margin-right:10px;
+}
+
+div.gallery{
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+div.gallery img {
+	background-color: #FFF;padding: 4px;
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	margin-bottom: 10px;
+	/*filter:alpha(opacity=60);-moz-opacity:.6;opacity: .6;*/
+	-webkit-transition: opacity .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out;
+	-ms-transition: opacity .2s ease-in-out;	
+	transition: opacity .2s ease-in-out;
+}
+
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #BDA842;
+}
+
+
+}

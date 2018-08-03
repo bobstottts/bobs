@@ -1,0 +1,143 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=""><!-- InstanceBegin template="/Templates/index.dwt" codeOutsideHTMLIsLocked="false" -->
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Camps Bay Villa</title>
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<link rel="canonical" href="index.html" />
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="styles/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="styles/campsbay.css" rel="stylesheet" type="text/css">
+<link href="scripts/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="scripts/respond.min.js"></script>
+<script src="scripts/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+
+
+<script src="scripts/jquery-1.7.2.min.js"></script>
+	<script>
+		$(function() {
+		
+			$("#slideshow > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next()
+			    .fadeIn(1000)
+			    .end()
+			    .appendTo('#slideshow');
+			},  6000);
+			
+		});
+		
+		
+		
+		$(document).ready(function(){
+			$('a.track_this_link').click(function() {
+			$.post('http://www.campsbayvilla.com/tracker.php', {id:this.id});
+			return true;
+			});
+		});
+		
+		
+	</script>
+    
+    
+</head>
+<body>
+<div class="gridContainer clearfix">
+  <div id="LayoutDiv1">
+  	<img src="images/logo.jpg" width="350"> <img src="images/campsbay-water.jpg" height="80" alt="">
+  	
+  </div>
+  <div id="logos" align="center"><img src="images/4stars.gif"><img src="images/tourism.gif"></div>
+  <div id="lang" align="center"><a href="index.htm"><img src="images/flagge_e.gif" border="0" ></a><a href="ger/index.htm"><img src="images/flagge_d.gif" border="0"></a></div>
+  <div id="LayoutDiv2" align="center">
+     <ul id="MenuBar1" class="MenuBarHorizontal">
+        <li><a href="index.htm">Home</a>    </li>
+      <li><a href="villa.htm">Villa</a></li>
+      <li><a href="penthouse.htm">Penthouse</a>    </li>
+      <li><a href="studio.htm">Studio</a></li>
+      <li><a href="directions.htm">Directions</a></li>
+      <li><a href="gallery.htm">Gallery</a></li>
+      <li><a href="feedback.htm">Guest Feedback</a></li>
+      <li><a href="contact.php.html">Contact</a></li>
+    </ul>
+	<script type="text/javascript">
+		var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../scripts/SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../scripts/SpryAssets/SpryMenuBarRightHover.gif"});
+
+	</script>
+  </div>
+  <div id="LayoutDiv3"><!-- InstanceBeginEditable name="body-text" -->
+  
+  <div id="slideshow">
+            	<div>
+     				<img src="images/slideshow/4.jpg"  />
+                </div>    
+                <div>    
+                    <img src="images/slideshow/2.jpg"  />
+                </div>
+                <div>    
+                    <img src="images/slideshow/5.jpg" />
+                </div>
+                <div>
+     				<img src="images/slideshow/6.jpg"  />
+                </div>    
+                <div>    
+                    <img src="images/slideshow/3.jpg"  />
+                </div>
+                <div>    
+                    <img src="images/slideshow/1.jpg" />
+                </div>
+   	</div>
+    <p>On one of the finest sites in beautiful Camps Bay, Cape Town, South Africa, a special combination of beach,  					ocean and mountain views <br>
+with complete privacy and exclusive use.</p>
+   <!-- <p>&nbsp;</p>
+	  
+	  
+	<video width="640" height="480" controls poster="videos/campsbay.jpg">
+         <source src="videos/Camps Bay Villa.mp4" type="video/mp4">
+         <source src="videos/Camps Bay Villa.webm" type="video/mp4">
+         <source src="videos/Camps Bay Villa.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+   </video> -->  
+	  
+	 <p>&nbsp;</p> 
+    
+    <p><a href="#" target="_blank" class="btn">BOOK OR ENQUIRE NOW</a></p>
+    
+       
+<!-- InstanceEndEditable -->
+  </div>
+  <div id="footer" align="center">
+    <p>© 1992 / 2018  <br />
+      All rights reserved.</p>
+    
+    
+  <p style="text-align: center"><img src="images/africa-domain-logo.png" width="150" alt=""></p>  
+    
+  </div>
+
+
+</div>
+  
+</body>
+<!-- InstanceEnd --></html>
+
+<!-- Localized -->
