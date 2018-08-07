@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="TraXion" />
+<meta name="description" content="Traxion is creating a 'bank-in-a-wallet' using blockchain-driven environment, enabling its community to load, send, save, spend, lend, borrow, and more using a secured, simplified yet compliant application." />
+<meta property="og:description" content="Traxion is creating a 'bank-in-a-wallet' using blockchain-driven environment, enabling its community to load, send, save, spend, lend, borrow, and more using a secured, simplified yet compliant application." />
+<meta property="og:image" content="http://www.traxion.tech/landing/assets/img/og-image-presale.png" />
+<meta property="og:url" content="https://www.traxion.tech/" />
+<meta property="og:type" content="website" />
+<link rel="icon" href="../landing/assets/img/logo/fav-ico.png" type="image/x-icon" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116560532-1"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-116560532-1');
+        </script>
+
+<script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1007764359371391'); 
+            fbq('track', 'PageView');
+        </script>
+<noscript>
+        <img height="1" width="1" 
+        src="https://www.facebook.com/tr?id=1007764359371391&ev=PageView&noscript=1"/>
+        </noscript>
+
+
+<script>
+            (function (h, e, a, t, m, p) {
+                m = e.createElement(a);
+                m.async = !0;
+                m.src = t;
+                p = e.getElementsByTagName(a)[0];
+                p.parentNode.insertBefore(m, p);
+            })(window, document, 'script', 'https://u.heatmap.it/log.js');
+        </script>
+
+
+<script type="text/javascript">
+            _linkedin_data_partner_id = "361676";
+            </script><script type="text/javascript">
+            (function(){var s = document.getElementsByTagName("script")[0];
+            var b = document.createElement("script");
+            b.type = "text/javascript";b.async = true;
+            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+            s.parentNode.insertBefore(b, s);})();
+            </script>
+<noscript>
+            <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=361676&fmt=gif" />
+        </noscript>
+
+<meta name="csrf-token" content="Li2zS5SexYXSb2Dj0ktYW6XoR3oqx26Y0WjADmht">
+<title>Traxion Token</title>
+<link href="../css/app-ver=ChNSWtTcu6c8y2Y74gPJkDxq3sYeLy53nIcBE1HU.css" rel="stylesheet">
+<script src="../js/fontawesome-all.js"></script>
+<link rel="stylesheet" href="../landing/assets/fonts/ionicons.min.css">
+</head>
+<body>
+<div id="app" class=" guest ">
+<div class="container-fluid quick-purchase-container" id="quick-purchase">
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="page-heading">
+<div class="bar"></div>
+<div class="title">
+Purchase TraXion Tokens
+</div>
+<div class="subtitle">
+Complete the 3-step process below to create your TraXion account and purchase TraXion tokens.
+</div>
+</div>
+<div class="card p-3">
+<ul class="list-group list-group-flush">
+<li class="list-group-item purchase-step" v-bind:class="{ 'show':(purchaseStep == STEP.ONE) }">
+<h4 class="title d-flex align-items-center mb-3">
+<div class="count">1</div>
+<span>Create Your Account</span>
+</h4>
+<div class="connector"></div>
+<div class="text-left py-5 input-group-lg content-container mx-auto">
+<div class="lead mb-2">
+We will send instructions to your email on how to activate your account.
+</div>
+<input type="text" class="form-control mx-auto mb-4" placeholder="Email Address" id="email" v-model="account.email">
+<div class="text-danger mb-3" v-show="error.has">
+{{ error.message }}
+</div>
+<button class="btn btn-primary btn-lg" @click="onCreateAccountClick()" :disabled="isLoading">
+<span v-show="!isLoading">Next</span>
+<span class="px-2" v-show="isLoading">
+Loading <i class="fas fa-circle-notch fa-spin"></i>
+</span>
+</button>
+</div>
+</li>
+<li class="list-group-item purchase-step" v-bind:class="{ 'show':(purchaseStep == STEP.TWO) }">
+<h4 class="title d-flex align-items-center mb-3">
+<div class="count">2</div>
+<span>Purchase Amount</span>
+</h4>
+<div class="connector"></div>
+<div class="text-left py-5 input-group-lg content-container mx-auto">
+<div class="lead text-left mb-3">
+Enter the amount of tokens you wish to purchase. 1 TXN is equal to 0.0007 ETH.
+</div>
+<input type="text" class="form-control mx-auto mb-3" placeholder="# of TraXion tokens you want to purchase" id="purchase-token-amount" v-on:keyup="onPurchaseTokenChange">
+<div class="lead mb-3 text-muted">
+<small class="mr-2">{{ tokenValues.eth }} ETH</small class="mx-2">
+<small class="mr-2">{{ tokenValues.usd }} USD</small class="mx-2">
+<small class="mr-2">{{ tokenValues.php }} PHP</small class="mx-2">
+</div>
+<div class="text-danger mb-3" v-show="error.has">
+{{ error.message }}
+</div>
+<button class="btn btn-primary btn-lg" @click="onSendCustomAmount()" :disabled="isLoading">
+<span v-show="!isLoading">Next</span>
+<span class="px-2" v-show="isLoading">
+Loading <i class="fas fa-circle-notch fa-spin"></i>
+</span>
+</button>
+</div>
+</li>
+<li class="list-group-item purchase-step" v-bind:class="{ 'show':(purchaseStep == STEP.THREE) }">
+<h4 class="title d-flex align-items-center mb-3">
+<div class="count">3</div>
+<span>Choose Your Payment Option</span>
+</h4>
+<div class="connector"></div>
+<div class="py-2 content-container mx-auto">
+<div class="d-flex justify-content-around align-items-center pt-5 pb-4 purchase-option">
+<div class="purchase-option-item eth pointer" v-bind:class="{ 'active': paymentOption == PAYMENT_OPT.ETH }" @click="choosePurchaseOption(PAYMENT_OPT.ETH)">
+<i class="fab fa-ethereum"></i>
+<div class="mt-4 lead">Ethereum</div>
+</div>
+<div class="purchase-option-item bnk pointer" v-bind:class="{ 'active': paymentOption == PAYMENT_OPT.BNK }" @click="choosePurchaseOption(PAYMENT_OPT.BNK)">
+<i class="fas fa-university"></i>
+<div class="mt-4 lead">Bank</div>
+</div>
+<div class="purchase-option-item btc pointer" v-bind:class="{ 'active': paymentOption == PAYMENT_OPT.BTC }" @click="choosePurchaseOption(PAYMENT_OPT.BTC)">
+<i class="fab fa-bitcoin"></i>
+<div class="mt-4 lead">Bitcoin</div>
+</div>
+</div>
+<div class="purchase-via-eth" style="display: none;" v-show="paymentOption == PAYMENT_OPT.ETH">
+<div class="container-fluid">
+<hr>
+<h3 class="card-title font-weight-bold">Ethereum</h3>
+<div class="mb-3">
+<div class="px-3 mt-3">
+<div class="lead mb-2" v-show="!showETHPaymentInstructions">
+Enter the Ether Wallet Address where you want to receive TXN tokens.
+</div>
+<div class="input-group-lg position-relative" v-show="!showETHPaymentInstructions">
+<input type="text" class="form-control mx-auto mb-3" placeholder="Ether Wallet Address" id="wallet-address" v-model="account.wallet_address">
+<div class="wallet-address-info" data-toggle="modal" data-target="#wallet-info-modal">
+<i class="far fa-question-circle fa-lg"></i>
+</div>
+</div>
+<div class="text-danger mb-3" v-show="error.has">
+{{ error.message }}
+</div>
+<div class="mt-3" v-show="!showETHPaymentInstructions">
+<button class="btn btn-primary btn-lg" @click="attempToWhitelist()" :disabled="whitelist.loading && !whitelist.status">
+<span v-show="!whitelist.loading">Next</span>
+<span class="px-2" v-show="whitelist.loading">
+Loading <i class="fas fa-circle-notch fa-spin"></i>
+</span>
+</button>
+</div>
+</div>
+<div v-show="showETHPaymentInstructions">
+<p class="px-3 pt-3 lead">
+Step 1. Ensure you have enough Ether on your Ethereum Wallet, buy ETH on <a href="https://www.bitpanda.com/en" target="_blank">BitPanda</a> or <a href="https://www.coinmama.com/" target="_blank">CoinMama</a>.
+<br>
+Step 2. Purchase TXN by sending ETH <a href="#!" @click="(showPurchaseSubStep = !showPurchaseSubStep)">here</a>.
+</p>
+<div class="pl-5 pt-2 lead" v-show="showPurchaseSubStep">
+<p>
+Step 2.1. Now open <a href="https://www.myetherwallet.com/?to=0x03c2f70569aD424d8DB18aD5092A7E4B563CaCC8&value=1#send-transaction" target="_blank">MyEtherWallet</a> and click 'Send Ether & Tokens'
+</p>
+<img src="../img/purchase-mew-ss.png" alt="" style="width: 80%; margin: 2rem auto; display: block;">
+<p>
+Step 2.2. Paste the TXN Contract Address into 'To Address' field (ctr-v/cmd-v), type in the amount of Ether you want to invest and volume of GAS you’re expecting to spend.
+<div class="my-2">
+<div class="input-group-lg mb-2">
+<div class="d-flex align-items-center justify-content-between mb-3">
+<label for=""><b>TXN Contract Address</b></label>
+<button class="btn btn-info" @click="clipboard('_eth-add', 'link-copied')">Copy</button>
+</div>
+<input type="text" class="form-control" v-model="addresses.eth" id="_eth-add" readonly>
+</div>
+<div class="mb-1 font-weight-bold">Min Contribution: 0.21 ETH</div>
+<div class="mb-2 font-weight-bold">Suggested Gas Limit : 120,000</div>
+</div>
+</p>
+<p>
+Step 2.3. The last thing you have to do is to click 'Generate Transaction' and then 'Send Transaction'
+</p>
+<p>
+You’ve just supported the next promising ICO!
+</p>
+</div>
+<div class="d-flex align-items-start justify-content-start px-3 mt-5">
+<button class="btn btn-primary btn-lg" @click="nextStep()">
+Finish
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="purchase-via-email" style="display: none;" v-show="paymentOption == PAYMENT_OPT.BNK">
+<div class="container-fluid">
+<hr>
+<h3 class="card-title font-weight-bold">Bank Transfer</h3>
+<p class="px-3 py-3 lead">
+To give you more flexibility we're also accepting payments via Bank Transfer.
+Click the button below to view our bank details and get a copy on your email.
+</p>
+<div class="d-none">
+<input type="text" class="form-control text-center" aria-label="Large" aria-describedby="eth-add" v-model="account.email" placeholder="Email Address" readonly>
+</div>
+<div class="text-left px-3">
+<button class="btn btn-primary btn-lg" @click="onGetBankDetails()" :disabled="isLoading">
+<span v-show="!isLoading">Get Bank Details</span>
+<span class="px-2" v-show="isLoading">
+Loading <i class="fas fa-circle-notch fa-spin"></i>
+</span>
+</button>
+</div>
+</div>
+</div>
+<div class="purchase-via-btc" style="display: none;" v-show="paymentOption == PAYMENT_OPT.BTC">
+<div class="container-fluid">
+<hr>
+<h3 class="card-title font-weight-bold">Bitcoin</h3>
+<p class="px-3 py-3 lead">
+We're excited to give you the option to purchase via Bitcoin! After making a transfer, please send a proof of purchase to <a href="../cdn-cgi/l/email-protection/index.html" class="__cf_email__" data-cfemail="6e1d1b1e1e011c1a2e1a1c0f16070100401a0b0d06">[email&#160;protected]</a> to confirm your purchase.
+</p>
+<div class="input-group-lg mb-4 px-3">
+<div class="d-flex align-items-center justify-content-between mb-3">
+<label for="">Bitcoin Address</label>
+<button class="btn btn-info" @click="clipboard('_btc-add', 'link-copied')">Copy</button>
+</div>
+<input type="text" class="form-control" value="3Pj5sTkigkbBoMSpByQ9myLqBWHd8gW6m3" id="_btc-add" readonly>
+</div>
+<div class="text-left px-3">
+<button class="btn btn-primary btn-lg" @click="nextStep()" :disabled="isLoading">
+<span v-show="!isLoading">Next</span>
+<span class="px-2" v-show="isLoading">
+Loading <i class="fas fa-circle-notch fa-spin"></i>
+</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="list-group-item purchase-step" v-bind:class="{ 'show':(purchaseStep == STEP.FOUR) }">
+<h4 class="title d-flex align-items-center mb-3">
+<div class="count">4</div>
+<span>Done!</span>
+</h4>
+<div class="connector"></div>
+<div class="text-left py-2 content-container mx-auto">
+<div class="lead mb-3">
+<p>
+Congratulations! You may now access TraXion's services and enjoy basic wallet features.
+</p>
+<p>
+All purchased tokens will reflect on the dashboard. You can gain commission by sharing this link to friends that will sign up and buy tokens.
+</p>
+</div>
+<a class="btn btn-primary btn-lg mb-3" href="../wallet/index.html">
+Buy more tokens
+</a>
+<a class="btn btn-primary btn-lg mb-3" href="../login/index.html">
+Login
+</a>
+<button class="btn btn-tx btn-lg mb-3" data-toggle="modal" data-target="#social-link-modal">
+Share Commission Link
+</button>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="modal fade" id="wallet-info-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title" id="modal-label">What is a Wallet Address?</h3>
+<div class="card-text lead text-secondary" style="line-height: 1.45rem;">
+<p>
+A wallet address is like a bank account where you can keep your tokens and cryptocurrencies. It is also where anyone can do various transactions with you through a public key automatically generated per transaction, and you can keep it safe by keeping its private key out of reach of other people.
+</p>
+<p>
+Do note that like your bank account, this is your only means to send and receive tokens and cryptocurrencies. Be reminded that you need to paste this wallet address on the purchase form to buy tokens.
+</p>
+<div class="mt-3">
+Click <a href="https://medium.com/traxion-tech/how-to-set-up-your-myetherwallet-3e8b9c75a8ac" target="_blank">here</a> for a step-by-step guide on creating a wallet via <u>MyEtherWallet</u>.
+</div>
+</div>
+<div class="text-center mt-5">
+<a href="https://www.myetherwallet.com/" target="blank" class="btn btn-primary btn-tx mx-1">
+Create New Wallet
+</a>
+<button type="button" class="btn btn-tx mx-1" data-dismiss="modal" aria-label="Close">
+Close
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="bank-details-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title" id="modal-label">TraXion Bank Details</h3>
+<div class="card-text lead">
+<dl class="row mt-4">
+<dt class="col-sm-4">Account Name:</dt>
+<dd class="col-sm-8">Gava Technologies Inc.</dd>
+<dt class="col-sm-4">Peso Savings Account</dt>
+<dd class="col-sm-8">008860005499</dd>
+<dt class="col-sm-4">Dollar Savings Account</dt>
+<dd class="col-sm-8">108860001248</dd>
+<dt class="col-sm-4">Bank:</dt>
+<dd class="col-sm-8">Banco De Oro (BDO)</dd>
+<dt class="col-sm-4">Branch:</dt>
+<dd class="col-sm-8">Pasig - Capitol Commons Estancia, Philippines</dd>
+<dt class="col-sm-4">Swift Code:</dt>
+<dd class="col-sm-8">BNORPHMM</dd>
+</dl>
+<div>After making a transfer, send a proof of purchase to <a href="../cdn-cgi/l/email-protection/index.html" class="__cf_email__" data-cfemail="04777174746b7670447076657c6d6b6a2a7061676c">[email&#160;protected]</a> to confirm your purchase.</div>
+</div>
+<div class="text-center mt-5">
+<button type="button" class="btn btn-tx mx-1" @click="onCloseBankDetails">
+Close
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="social-link-modal">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title" id="modal-label">Share Commission Link</h3>
+<div class="card-text lead">
+<div class="text-center my-3">
+You can earn bonus commission by sharing the commission link provided through different ways online. Tap into everyone you know to gain bigger chances of earning big rewards.
+</div>
+<div class="mt-3">
+<div>
+<label for="">Commission Link</label>
+<span id="link-copied" class="float-right text-info" style="opacity:0;">
+Link copied!
+</span>
+</div>
+<input type="text" class="form-control" v-model="commissionLinks.raw" id="_affiliate_link" readonly>
+</div>
+<div class="d-flex flex-wrap text-align-center justify-content-center px-3 py-2">
+<a v-bind:href="../commissionLinks.fb" target="blank" class="btn btn-fb m-2">
+<i class="fab fa-facebook-f"></i> &nbsp; Facebook
+</a>
+<a v-bind:href="../commissionLinks.tw" target="blank" class="btn btn-twitter m-2">
+<i class="fab fa-twitter"></i> &nbsp; Twitter
+</a>
+<button @click="redditShare" class="btn btn-reddit m-2">
+<i class="fab fa-reddit-alien"></i> &nbsp; Reddit
+</button>
+<a href="#!" class="btn btn-info m-2" @click="clipboard('_affiliate_link', 'link-copied')">
+<i class="fas fa-link"></i> &nbsp; Copy
+</a>
+</div>
+</div>
+<div class="text-center mt-3">
+<button type="button" class="btn btn-tx mx-1" data-dismiss="modal" aria-label="Close">
+Close
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="contract-details-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="card">
+<div class="card-body">
+<h3 class="card-title" id="modal-label">TraXion Wallet Contract</h3>
+<div class="card-text py-3 lead">
+<div class="input-group-lg mb-4">
+<div class="d-flex align-items-center justify-content-between mb-3">
+<label for="">Contract Address</label>
+<button class="btn btn-info" @click="clipboard('_eth-add', 'link-copied')">Copy</button>
+</div>
+<input type="text" class="form-control" v-model="addresses.eth" id="_eth-add" readonly>
+</div>
+<div class="input-group-lg mb-4">
+<div class="d-flex align-items-center justify-content-between mb-3">
+<label for="">Contract ABI / JSON Interface</label>
+ <button class="btn btn-info" @click="clipboard('_eth-abi', 'link-copied')">Copy</button>
+</div>
+<textarea type="text" class="form-control" v-model="addresses.ethAbi" id="_eth-abi" readonly></textarea>
+</div>
+<div class="text-center mb-3">
+<p class="px-3 py-3 lead">
+You can choose to pay using Ether by using any number of ethereum-based wallets. We recommend directly paying through MyEtherWallet (MEW) or other trusted services.
+</p>
+ <a href="https://www.myetherwallet.com/?to=0x03c2f70569aD424d8DB18aD5092A7E4B563CaCC8#contracts" target="_blank">
+<img src="../img/myetherwallet-logo.png" alt="MyEtherWallet" style="width: 190px">
+</a>
+<h4 class="px-3 mt-5">
+Make sure to copy the ABI code to purchase tokens
+</h4>
+</div>
+</div>
+<div class="text-center mt-5">
+<button type="button" class="btn btn-tx mx-1" data-dismiss="modal" aria-label="Close">
+Close
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+
+
+</body>
+</html>
+
+<!-- Localized -->
