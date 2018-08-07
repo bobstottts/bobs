@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.07 50">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #eeeeef;
+      }
+
+      .cls-1 {
+        stroke: #e3e4e5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 0.82px;
+      }
+
+      .cls-2 {
+        fill: #005b75;
+      }
+
+      .cls-4 {
+        fill: #00bdde;
+      }
+    </style>
+  </defs>
+  <title>traxion-network</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <line class="cls-1" x1="22.54" y1="45.26" x2="22.54" y2="5.61"/>
+        <line class="cls-1" x1="8.52" y1="39.45" x2="36.55" y2="11.41"/>
+        <line class="cls-1" x1="2.71" y1="25.43" x2="42.36" y2="25.43"/>
+        <line class="cls-1" x1="8.52" y1="11.41" x2="36.55" y2="39.45"/>
+        <g>
+          <circle class="cls-2" cx="22.54" cy="25.43" r="8.19"/>
+          <g>
+            <circle class="cls-3" cx="22.54" cy="23.37" r="2.03"/>
+            <path class="cls-3" d="M25.93,29.53H19.15a3.39,3.39,0,0,1,6.78,0Z"/>
+          </g>
+        </g>
+        <g>
+          <circle class="cls-4" cx="22.54" cy="45.07" r="1.63"/>
+          <path class="cls-4" d="M25.25,50H19.82a2.71,2.71,0,1,1,5.42,0Z"/>
+        </g>
+        <g>
+          <circle class="cls-4" cx="7.66" cy="40.27" r="1.63"/>
+          <path class="cls-4" d="M10.37,45.19H4.95a2.71,2.71,0,1,1,5.42,0Z"/>
+        </g>
+        <g>
+          <circle class="cls-4" cx="7.66" cy="7.78" r="1.63"/>
+          <path class="cls-4" d="M10.37,12.71H4.95a2.71,2.71,0,1,1,5.42,0Z"/>
+        </g>
+        <g>
+          <circle class="cls-4" cx="22.54" cy="1.63" r="1.63"/>
+          <path class="cls-4" d="M25.25,6.55H19.82a2.71,2.71,0,1,1,5.42,0Z"/>
+        </g>
+        <g>
+          <circle class="cls-4" cx="36.79" cy="7.75" r="1.63"/>
+          <path class="cls-4" d="M39.5,12.68H34.08a2.71,2.71,0,0,1,5.42,0Z"/>
+        </g>
+        <g>
+          <circle class="cls-4" cx="42.36" cy="22.96" r="1.63"/>
+          <path class="cls-4" d="M45.07,27.89H39.65a2.71,2.71,0,1,1,5.42,0Z"/>
+        </g>
+        <g>
+          <circle class="cls-4" cx="2.71" cy="22.94" r="1.63"/>
+          <path class="cls-4" d="M5.42,27.87H0a2.71,2.71,0,0,1,5.42,0Z"/>
+        </g>
+        <g>
+          <circle class="cls-4" cx="36.79" cy="40.27" r="1.63"/>
+          <path class="cls-4" d="M39.5,45.19H34.08a2.71,2.71,0,0,1,5.42,0Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

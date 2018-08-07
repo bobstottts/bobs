@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 51.04 48.11">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #eeeeef;
+      }
+
+      .cls-3 {
+        fill: #005b75;
+      }
+
+      .cls-4 {
+        fill: #ced0d1;
+      }
+
+      .cls-5 {
+        fill: #a3a4a7;
+      }
+
+      .cls-6 {
+        fill: #e3e4e5;
+      }
+
+      .cls-7 {
+        fill: #00bdde;
+      }
+
+      .cls-8 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-9 {
+        fill: #0088ac;
+      }
+
+      .cls-10 {
+        fill: #414142;
+      }
+    </style>
+    <clipPath id="clip-path" transform="translate(0 -0.82)">
+      <rect class="cls-1" width="51.07" height="50"/>
+    </clipPath>
+  </defs>
+  <title>traxion-product_1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <rect class="cls-2" y="12.48" width="44.56" height="31.19"/>
+        <rect class="cls-3" width="44.56" height="12.48"/>
+        <path class="cls-2" d="M8.91,7.06A2.67,2.67,0,1,1,6.24,4.38,2.67,2.67,0,0,1,8.91,7.06Zm0,0" transform="translate(0 -0.82)"/>
+        <path class="cls-4" d="M16.93,7.06a2.67,2.67,0,1,1-2.67-2.68,2.67,2.67,0,0,1,2.67,2.68Zm0,0" transform="translate(0 -0.82)"/>
+        <path class="cls-5" d="M25,7.06a2.67,2.67,0,1,1-2.67-2.68A2.67,2.67,0,0,1,25,7.06Zm0,0" transform="translate(0 -0.82)"/>
+        <path class="cls-6" d="M31.94,40.47h0L30.16,47l4.14-4.14Zm0,0" transform="translate(0 -0.82)"/>
+        <path class="cls-7" d="M49.1,28,48,26.93a1.77,1.77,0,0,0-2.5,0l-3.19,3.19,2.36,2.36Zm0,0" transform="translate(0 -0.82)"/>
+        <path class="cls-7" d="M42.29,30.12l2.36,2.36L34.3,42.83l-2.36-2.36Zm0,0" transform="translate(0 -0.82)"/>
+        <g class="cls-8">
+          <path class="cls-4" d="M37,45.52h0L34.3,42.83,30.16,47l-.12.44Zm0,0" transform="translate(0 -0.82)"/>
+          <path class="cls-9" d="M47.33,35.16,50.53,32a1.77,1.77,0,0,0,0-2.5L49.1,28l-4.45,4.44Zm0,0" transform="translate(0 -0.82)"/>
+        </g>
+        <path class="cls-9" d="M37,45.51,34.3,42.83,44.65,32.48l2.68,2.68Zm0,0" transform="translate(0 -0.82)"/>
+        <path class="cls-10" d="M29.41,48.93a.9.9,0,0,1-.63-.26.89.89,0,0,1,0-1.26l2-2A.89.89,0,0,1,32,46.7l-2,2a.91.91,0,0,1-.63.26Zm0,0" transform="translate(0 -0.82)"/>
+      </g>
+    </g>
+  </g>
+</svg>

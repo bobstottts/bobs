@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.53 66.55">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00bdde;
+      }
+
+      .cls-2 {
+        fill: #0088ac;
+      }
+
+      .cls-3 {
+        fill: #eeeeef;
+      }
+
+      .cls-4 {
+        fill: #005b75;
+      }
+
+      .cls-5 {
+        fill: #e3e4e5;
+      }
+    </style>
+  </defs>
+  <title>traxion-contract</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="landing">
+      <g id="bureaucracy">
+        <g id="paper">
+          <polygon class="cls-1" points="48.4 66.56 0 66.56 0 0 33.01 0 48.4 15.04 48.4 66.56 48.4 66.56"/>
+          <polygon class="cls-2" points="33.01 0 48.4 15.04 33.01 15.04 33.01 0 33.01 0"/>
+          <polygon class="cls-3" points="31.14 21.65 6.47 21.65 6.47 19.04 31.14 19.04 31.14 21.65 31.14 21.65"/>
+          <polygon class="cls-3" points="43.01 28.77 6.47 28.77 6.47 26.16 43.01 26.16 43.01 28.77 43.01 28.77"/>
+          <polygon class="cls-3" points="43.01 33.75 6.47 33.75 6.47 31.14 43.01 31.14 43.01 33.75 43.01 33.75"/>
+        </g>
+        <rect class="cls-4" x="42.11" y="6.42" width="7.69" height="53.36" transform="matrix(0.92, 0.39, -0.39, 0.92, 16.46, -15.25)"/>
+        <polyline class="cls-5" points="32.07 55.92 32.04 65.91 39.16 58.91"/>
+        <circle class="cls-5" cx="57.56" cy="5.94" r="2.07" transform="translate(29.73 56.68) rotate(-67.14)"/>
+        <polyline class="cls-4" points="61.53 7.5 53.52 4.13 52.24 7.15 60.26 10.53"/>
+        <polyline class="cls-4" points="59.97 20.12 56.13 18.51 56.92 16.64 60.75 18.25"/>
+        <polyline class="cls-4" points="60.1 19.8 52.7 37.37 50.66 36.51 58.07 18.94 60.1 19.8"/>
+        <circle class="cls-5" cx="51.49" cy="37.38" r="1.58" transform="translate(-2.95 70.31) rotate(-67.14)"/>
+      </g>
+    </g>
+  </g>
+</svg>
