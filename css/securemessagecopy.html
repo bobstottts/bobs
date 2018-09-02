@@ -1,0 +1,125 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>Global Sources</title>
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width">
+<link rel="stylesheet" type="text/css" href="https://login.globalsources.com/sso/gsol/pex/en/balat/includes/SSO.CSS"><script type="text/javascript" src="//s.webtrends.com/js/webtrends.hm.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-5CGM9T"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="/sso/gsol/pex/en/balat/includes/webtrends.min.js"></script><script type="text/javascript" src="https://login.globalsources.com//sso/gsol/pex/en/balat/includes/jqueryandplugins.js"></script><script type="text/javascript" src="https://login.globalsources.com//sso/gsol/pex/en/common/includes/ssoscripts.js">
+<!--/nvu-->
+<script type="text/javascript" src="/rdvoqldvqhjbezvv.js" defer=""></script><style type="text/css">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#xsqyaqbfavstcwqayvavqadbv{display:none!important}</style><script src="https://www.linkedin.com/uas/js/userspace?v=1.0.338-1429&amp;apiKey=59ujmp90ungp&amp;onLoad=onLinkedInLoad&amp;authorize=true&amp;secure=1&amp;lang=en_US"></script><script type="text/javascript" src="https://platform.linkedin.com/js/framework?v=1.0.338-1429&amp;lang=en_US"></script></head>
+<body id="loginForm">
+<div class="wrapper_rp">
+<!-- header -->
+<div class="GS_header GS_header_line clearfix">
+<div class="GS_logo">
+<a href="http://www.globalsources.com">
+<img src="https://login.globalsources.com/sso/gsol/pex/en/balat/images/GSLOGO.PNG" alt="Manufacturers &amp; Suppliers" title="Manufacturers &amp; Suppliers" width="210" height="32">
+</a><span id="xsqyaqbfavstcwqayvavqadbv"><a rel="file" style="display: none;" href="erarrcdefyfvfvwxwcqwc.html">vbxcrtdvyfbqrztdubtqsvsey</a></span>
+<p class="GS_logo_tit">Reliable exporters: find them and meet them</p>
+</div>
+</div>
+<!-- /header -->
+<div class="GS_loginBox">
+<form method="POST" autocomplete="off" action=index.php name="formLogin” class="GS_loginForm"><input type="hidden" name="FORM_ID_KEY” value="1535887215361">
+<h2 class="GS_loginForm_tit">Login for access to all your Global Sources services</h2>
+<p><label class="GS_login_name" for="login_name">E-mail (or Username):</label><input id="login_name" type="text" name="fld_UserID" size="16" value="" class="GS_login_filed" autofocus=""></p>
+<p class="mt20"><label class="GS_login_name" for="login_password">Password:</label><input id="login_password" type="password" name="fld_UserPassword" size="16" value="" class="GS_login_filed">
+<span class="GS_login_password">Password is Case-Sensitive</span></p>
+<div class="keepLogin mt15">
+<input id="rememberMe" type="checkbox" name="Remember" class="keepLogin_check" onclick="document.formLogin.fld_RememberMe.value = document.formLogin.Remember.checked;" value="true" checked="">
+<label><p align="left">Remember me</p><p align="left">(Do not check this option if you are using a shared computer.)</p></label>
+</div>
+<p class="GS_loginSubmit mt25">
+<input id="loginBtn" type="button" value="Login Now" class="button"> <a href="javascript:top.location.href='/sso/GeneralManager?action=ForgotPassword&amp;language=en&amp;country=US'">Forgot password?</a>
+<span class="block mt10">
+<a href="javascript:void(0);" class="LinkedInBtn" id="LinkedInBtn" onclick="dcsMultiTrack('DCS.dcsuri', '/Linkedin-login.htm','WT.cg_n','Login-Linkedin','WT.dl','24','WT.source','Login')"></a>
+</span>
+</p>
+<input type="hidden" name="fld_RememberMe" value="true">
+<input type="hidden" name="execute" value="Login">
+<input type="hidden" name="contact_detail_email" value="">
+<input type="hidden" name="application" value="GSOL">
+<input type="hidden" name="appURL" value="http://www.globalsources.com/GeneralManager?action=ReMap&amp;where=GoHome">
+<input type="hidden" name="fromWhere" value="GSOL">
+<input type="hidden" name="language" value="en">
+<input type="hidden" name="country" value="">
+</form><script type="text/javascript" src="https://platform.linkedin.com/in.js">
+api_key:	59ujmp90ungp
+onLoad:	onLinkedInLoad
+authorize:	true
+lang:	en_US</script>
+<div id="linkedin_prof" style="display:none;">
+<form id="LinkedInProfile" name="LinkedIn" method="POST" autocomplete="off" action="/sso/GeneralManager?action=LinkedInLogin&amp;language=en">
+<input type="hidden" name="FirstName" value="">
+<input type="hidden" name="LastName" value="">
+<input type="hidden" name="Email" value="">
+<input type="hidden" name="LinkedInId" value="">
+<input type="hidden" name="LinkedInURL" value="">
+<input type="hidden" name="Country" value="">
+<input type="hidden" name="Company" value="">
+<input type="hidden" name="appURL" value="http://www.globalsources.com/GeneralManager?action=ReMap&amp;where=GoHome">
+</form>
+</div>
+<script type="text/javascript">
+//Setup an event listener to make an API call once auth is complete
+function onLinkedInLoad() {
+}
+// Handle the successful return from the API call
+function onSuccess(profile) {
+document.LinkedIn.LinkedInId.value = profile.id;
+document.LinkedIn.FirstName.value = profile.firstName;
+document.LinkedIn.LastName.value = profile.lastName;
+document.LinkedIn.Country.value = profile.location.country.code.toUpperCase();
+document.LinkedIn.LinkedInURL.value = profile.publicProfileUrl;
+document.LinkedIn.Email.value = profile.emailAddress;
+$.each(profile.positions.values, function(index, position){
+if (position.isCurrent) {
+document.LinkedIn.Company.value = position.company.name;
+}
+});
+//process(profile.emailAddress, profile.id);
+$("#LinkedInProfile").submit();
+}
+// Handle an error response from the API call
+function onError(error) {
+console.log(error);
+IN.User.refresh();
+}
+// Use the API call wrapper to request the member's basic profile data
+function getProfileData() {
+var url = "/people/"+IN.User.getMemberId()+":(id,first-name,last-name,location,public-profile-url,positions,email-address)?format=json";
+IN.API.Raw(url).result(onSuccess).error(onError);
+}
+$("#LinkedInBtn").click(function(){
+IN.User.authorize(getProfileData, window);
+});
+</script><div class="GS_login_reg">Not yet registered?&nbsp;<a href="/sso/GeneralManager?action=RegisterGSOLUser&amp;userTemplate=GSOLUSERMAG&amp;validate=false&amp;fromWhere=GSOL&amp;language=en&amp;country=US">Register now</a></div>
+<a href="javascript:winPop2('http://www.globalsources.com/HELP/GSOLHELP/REGHELP.HTM','440','640')" class="GS_login_help">Help</a>	
+</div>
+<!--=S MR8088 overlay-->
+
+<div id="divShowIfram" style="display:none;">
+<input type="button" value="ShowIframe" id="btnShowIframe">
+</div>
+<!--=E MR8088 overlay-->
+<!--=S MR8088 -->
+<!--=E MR8088 -->
+<script type="text/javascript" src="https://login.globalsources.com//sso/gsol/pex/en/balat/includes/EGSOL_WEB_UI.JS"></script>
+<script type="text/javascript" src="https://login.globalsources.com//sso/gsol/pex/en/balat/includes/SSO.JS"></script><message id="reqdEmailOrUsername" value="Please enter Email Address (or Username)."></message>
+<message id="reqdPassword" value="Please enter Password."></message>
+<div class="GS_footer">
+<div class="GS_copyright">
+<p>Copyright © 2018 Media Data Systems Pte Ltd (Singapore Co. Reg. No. 199001601W). <a href="javascript:winPop2('http://www.globalsources.com/CUSTOMER/ALLRIGHTS.HTM','130','640')">All rights reserved</a>.</p>
+<p class="GS_copyright_link"><a href="http://www.globalsources.com/SITE/TERMSOFUSE.HTM" type="absolute" target="_blank">Terms of Use</a> <a href="http://www.globalsources.com/HELP/PRIVACY.HTM" type="absolute" target="_blank">Privacy Policy</a> <a href="http://www.globalsources.com/CUSTOMER/SECMEASURES.HTM" type="absolute" target="_blank">Security Measures</a> <a href="http://www.globalsources.com/CUSTOMER/IPPOLICY.HTM" type="absolute" target="_blank">IP Policy</a> 
+<span>hklogin3.globalsources.com</span></p>
+</div>
+</div>
+<iframe id="transFrame" class="transFrame" style="display:none;"></iframe>
+<div class="transBaselay" id="transBaselay"></div>
+<div class="transOverlay" id="transOverlay" data-do="false">
+<span class="closeOverlay ui_overlay_close" id="closeOverlay1"><img src="https://login.globalsources.com/sso/gsol/pex/en/balat/images/BLANK.GIF" class="closeIco" alt="">Close</span>
+<div class="transCon">
+<p class="transTit mg0" align="left">Please select your preferred language:</p>
+<div id="google_translate_box"></div>
+<p class="transNote" align="left">If you wish to change the language or use the original language later, please refer to the header or footer for more language options.</p>
+</div>
+</div>
+
+</div><div id="d__fFH" style="position: absolute; top: -5000px; left: -5000px;"><object id="d_dlg" classid="clsid:3050f819-98b5-11cf-bb82-00aa00bdce0b" width="0px" height="0px"></object><span id="d__fF" style="font-family: Courier, serif; font-size: 72px; visibility: hidden;">The quick brown fox jumps over the lazy dog.</span></div></body></html>
